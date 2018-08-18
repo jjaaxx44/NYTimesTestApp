@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		55825A232127167300042C19 /* NYTimesTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55825A222127167300042C19 /* NYTimesTestAppTests.swift */; };
+		5587A1392128251000004047 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5587A1382128251000004047 /* Results.swift */; };
+		5587A13B2128251800004047 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5587A13A2128251800004047 /* Media.swift */; };
+		5587A13D2128252000004047 /* MediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5587A13C2128252000004047 /* MediaMetadata.swift */; };
+		5587A13F2128257E00004047 /* MostViewed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5587A13E2128257E00004047 /* MostViewed.swift */; };
 		5588D5F421270FEF003059C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588D5F321270FEF003059C0 /* AppDelegate.swift */; };
 		5588D5F621270FEF003059C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588D5F521270FEF003059C0 /* ViewController.swift */; };
 		5588D5F921270FEF003059C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5588D5F721270FEF003059C0 /* Main.storyboard */; };
@@ -30,6 +34,10 @@
 		55825A202127167200042C19 /* NYTimesTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55825A222127167300042C19 /* NYTimesTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesTestAppTests.swift; sourceTree = "<group>"; };
 		55825A242127167300042C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5587A1382128251000004047 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		5587A13A2128251800004047 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		5587A13C2128252000004047 /* MediaMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadata.swift; sourceTree = "<group>"; };
+		5587A13E2128257E00004047 /* MostViewed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewed.swift; sourceTree = "<group>"; };
 		5588D5F021270FEF003059C0 /* NYTimesTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5588D5F321270FEF003059C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5588D5F521270FEF003059C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +86,17 @@
 			path = NYTimesTestAppTests;
 			sourceTree = "<group>";
 		};
+		5587A135212824E300004047 /* Model entities */ = {
+			isa = PBXGroup;
+			children = (
+				5587A1382128251000004047 /* Results.swift */,
+				5587A13A2128251800004047 /* Media.swift */,
+				5587A13C2128252000004047 /* MediaMetadata.swift */,
+				5587A13E2128257E00004047 /* MostViewed.swift */,
+			);
+			path = "Model entities";
+			sourceTree = "<group>";
+		};
 		5588D5E721270FEF003059C0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +120,7 @@
 		5588D5F221270FEF003059C0 /* NYTimesTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				5587A135212824E300004047 /* Model entities */,
 				5588D5F321270FEF003059C0 /* AppDelegate.swift */,
 				5588D5F521270FEF003059C0 /* ViewController.swift */,
 				5588D5F721270FEF003059C0 /* Main.storyboard */,
@@ -288,7 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5587A13F2128257E00004047 /* MostViewed.swift in Sources */,
+				5587A1392128251000004047 /* Results.swift in Sources */,
 				5588D5F621270FEF003059C0 /* ViewController.swift in Sources */,
+				5587A13D2128252000004047 /* MediaMetadata.swift in Sources */,
+				5587A13B2128251800004047 /* Media.swift in Sources */,
 				5588D5F421270FEF003059C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
