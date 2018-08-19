@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		553949E42128A108009446F9 /* NewsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553949E32128A108009446F9 /* NewsFetcher.swift */; };
 		55825A232127167300042C19 /* NYTimesTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55825A222127167300042C19 /* NYTimesTestAppTests.swift */; };
 		5587A1392128251000004047 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5587A1382128251000004047 /* Results.swift */; };
 		5587A13B2128251800004047 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5587A13A2128251800004047 /* Media.swift */; };
 		5587A13D2128252000004047 /* MediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5587A13C2128252000004047 /* MediaMetadata.swift */; };
 		5587A13F2128257E00004047 /* MostViewed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5587A13E2128257E00004047 /* MostViewed.swift */; };
 		5588D5F421270FEF003059C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588D5F321270FEF003059C0 /* AppDelegate.swift */; };
-		5588D5F621270FEF003059C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588D5F521270FEF003059C0 /* ViewController.swift */; };
+		5588D5F621270FEF003059C0 /* NewsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588D5F521270FEF003059C0 /* NewsFeedVC.swift */; };
 		5588D5F921270FEF003059C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5588D5F721270FEF003059C0 /* Main.storyboard */; };
 		5588D5FB21270FF2003059C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5588D5FA21270FF2003059C0 /* Assets.xcassets */; };
 		5588D5FE21270FF2003059C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5588D5FC21270FF2003059C0 /* LaunchScreen.storyboard */; };
+		55E5A86A2128377B001433DF /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5A8692128377B001433DF /* NewsCell.swift */; };
+		55E5A86D21283BF9001433DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5A86C21283BF9001433DF /* Constants.swift */; };
+		55E5A86F21283C04001433DF /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5A86E21283C04001433DF /* Extentions.swift */; };
+		55E7B6EF2128B06300316267 /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7B6EE2128B06300316267 /* NewsDetailsVC.swift */; };
 		5B6005E4D8954A7ECC20FC11 /* Pods_NYTimesTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8739E8F6B823F0AB0F8086 /* Pods_NYTimesTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		553949E32128A108009446F9 /* NewsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFetcher.swift; sourceTree = "<group>"; };
 		55825A202127167200042C19 /* NYTimesTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55825A222127167300042C19 /* NYTimesTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesTestAppTests.swift; sourceTree = "<group>"; };
 		55825A242127167300042C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,11 +46,15 @@
 		5587A13E2128257E00004047 /* MostViewed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewed.swift; sourceTree = "<group>"; };
 		5588D5F021270FEF003059C0 /* NYTimesTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5588D5F321270FEF003059C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5588D5F521270FEF003059C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5588D5F521270FEF003059C0 /* NewsFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedVC.swift; sourceTree = "<group>"; };
 		5588D5F821270FEF003059C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5588D5FA21270FF2003059C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5588D5FD21270FF2003059C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5588D5FF21270FF2003059C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E5A8692128377B001433DF /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		55E5A86C21283BF9001433DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		55E5A86E21283C04001433DF /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		55E7B6EE2128B06300316267 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
 		722576FBB70F4198BA2169CC /* Pods-NYTimesTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTimesTestApp/Pods-NYTimesTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		BE8739E8F6B823F0AB0F8086 /* Pods_NYTimesTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15BF198E6EE35ECA4FEAFAE /* Pods-NYTimesTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYTimesTestApp/Pods-NYTimesTestApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +85,24 @@
 				BE8739E8F6B823F0AB0F8086 /* Pods_NYTimesTestApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5505DB5821293F6000B11812 /* NewsFeed and details */ = {
+			isa = PBXGroup;
+			children = (
+				55E7B6EE2128B06300316267 /* NewsDetailsVC.swift */,
+				5588D5F521270FEF003059C0 /* NewsFeedVC.swift */,
+				55E5A8692128377B001433DF /* NewsCell.swift */,
+			);
+			path = "NewsFeed and details";
+			sourceTree = "<group>";
+		};
+		553949E22128A0BB009446F9 /* APICalls */ = {
+			isa = PBXGroup;
+			children = (
+				553949E32128A108009446F9 /* NewsFetcher.swift */,
+			);
+			path = APICalls;
 			sourceTree = "<group>";
 		};
 		55825A212127167300042C19 /* NYTimesTestAppTests */ = {
@@ -120,15 +148,26 @@
 		5588D5F221270FEF003059C0 /* NYTimesTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				553949E22128A0BB009446F9 /* APICalls */,
+				55E5A86B21283BE9001433DF /* Helpers */,
 				5587A135212824E300004047 /* Model entities */,
+				5505DB5821293F6000B11812 /* NewsFeed and details */,
 				5588D5F321270FEF003059C0 /* AppDelegate.swift */,
-				5588D5F521270FEF003059C0 /* ViewController.swift */,
 				5588D5F721270FEF003059C0 /* Main.storyboard */,
 				5588D5FA21270FF2003059C0 /* Assets.xcassets */,
 				5588D5FC21270FF2003059C0 /* LaunchScreen.storyboard */,
 				5588D5FF21270FF2003059C0 /* Info.plist */,
 			);
 			path = NYTimesTestApp;
+			sourceTree = "<group>";
+		};
+		55E5A86B21283BE9001433DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				55E5A86C21283BF9001433DF /* Constants.swift */,
+				55E5A86E21283C04001433DF /* Extentions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		AE860D195E2CF5E5B06B5BD0 /* Pods */ = {
@@ -310,10 +349,15 @@
 			files = (
 				5587A13F2128257E00004047 /* MostViewed.swift in Sources */,
 				5587A1392128251000004047 /* Results.swift in Sources */,
-				5588D5F621270FEF003059C0 /* ViewController.swift in Sources */,
+				5588D5F621270FEF003059C0 /* NewsFeedVC.swift in Sources */,
+				55E5A86A2128377B001433DF /* NewsCell.swift in Sources */,
 				5587A13D2128252000004047 /* MediaMetadata.swift in Sources */,
 				5587A13B2128251800004047 /* Media.swift in Sources */,
+				553949E42128A108009446F9 /* NewsFetcher.swift in Sources */,
 				5588D5F421270FEF003059C0 /* AppDelegate.swift in Sources */,
+				55E5A86D21283BF9001433DF /* Constants.swift in Sources */,
+				55E7B6EF2128B06300316267 /* NewsDetailsVC.swift in Sources */,
+				55E5A86F21283C04001433DF /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +396,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P9QF7W2PX;
 				INFOPLIST_FILE = NYTimesTestAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,6 +416,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P9QF7W2PX;
 				INFOPLIST_FILE = NYTimesTestAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,6 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P9QF7W2PX;
 				INFOPLIST_FILE = NYTimesTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,6 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P9QF7W2PX;
 				INFOPLIST_FILE = NYTimesTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

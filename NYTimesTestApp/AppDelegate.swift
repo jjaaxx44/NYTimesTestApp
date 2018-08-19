@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import SDWebImage
+
+let kCacheMaxCacheAge = 60 * 60 * 24 * 7 // 1 week
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //image cache set to one week
+        SDImageCache.shared().config.maxCacheAge = kCacheMaxCacheAge
+
         return true
     }
 
