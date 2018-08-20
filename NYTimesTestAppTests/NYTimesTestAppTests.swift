@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import WebKit
+
 @testable import NYTimesTestApp
 
 let correctJson = "{\"status\":\"OK\",\"copyright\":\"Copyright (c) 2018 The New York Times Company.  All Rights Reserved.\",\"num_results\":1684,\"results\":[{\"url\":\"https://www.nytimes.com/2018/08/13/nyregion/sexual-harassment-nyu-female-professor.html\",\"byline\":\"byline text\",\"title\":\"title text\",\"id\":100000006044436,\"media\":[{\"type\":\"image\",\"subtype\":\"photo\",\"caption\":\"caption text.\",\"media-metadata\":[{\"url\":\"url text\",\"format\":\"Large Thumbnail\",\"height\":150,\"width\":150}]}]}]}"
@@ -46,6 +48,11 @@ class NYTimesTestAppTests: XCTestCase {
     
     //checking api response for OK or count of results
     func testAPIResponce(){
+        
+        
+        newsFeedVC.loadView()
+        newsFeedVC.viewDidLoad()
+
         let expect = expectation(description: "apiwait")
         
         let newsFetcher = NewsFetcher()
@@ -118,7 +125,18 @@ class NYTimesTestAppTests: XCTestCase {
     }
     
     func testNewsDetailsVCCompositioin(){
-        XCTAssertNotNil(newsDetailsVC.newsWebView, "NewsDetailsVC does not compose of a tableview")
+        let targetSegue: UIStoryboardSegue = UIStoryboardSegue(identifier: "newsDetailsSegue", source: newsFeedVC, destination: newsDetailsVC)
+        
+        newsFeedVC.prepare(for: targetSegue, sender: "https://www.google.co.in/")
+        newsDetailsVC.loadView()
+        newsDetailsVC.viewDidLoad()
+        XCTAssertEqual("https://www.google.co.in/", newsDetailsVC.newsWebView.url?.absoluteString)
+        
+        newsDetailsVC.newsWebView.navigationDelegate?.webView!(newsDetailsVC.newsWebView, didStartProvisionalNavigation: nil)
+        XCTAssertEqual(newsDetailsVC.activityIndicator.isAnimating, true)
+        
+        newsDetailsVC.newsWebView.navigationDelegate?.webView!(newsDetailsVC.newsWebView, didFinish: nil)
+        XCTAssertEqual(newsDetailsVC.activityIndicator.isAnimating, false)
     }
     
     func testCustomViewExtension(){
