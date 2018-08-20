@@ -19,7 +19,7 @@ Demo application showing consumption of NYTimes API
 
 
 ## Alternative:
-Open terminal on mac osx and run below commands
+Open terminal on mac osx and run below commands, one command at a time
 
 ```
 cd Desktop/
