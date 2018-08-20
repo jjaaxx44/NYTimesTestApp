@@ -21,6 +21,7 @@ Demo application showing consumption of NYTimes API
 ## Alternative:
 Open terminal on mac osx and run below commands
 
+```
 cd Desktop/
 
 mkdir NYTimesTestApp
@@ -28,6 +29,7 @@ mkdir NYTimesTestApp
 cd NYTimesTestApp
 
 git clone https://github.com/jjaaxx44/NYTimesTestApp.git
+```
 
 Once done follow #3 to #6
 
@@ -39,3 +41,5 @@ Considering above steps of running application are followed
 3. Once all cases are finished, you should get popup saying test successful
 4. On xcode goto report navigator (see image below)
 5. You should see test results and coverage details on report navigator (see image below)
+
+![alt text](https://github.com/jjaaxx44/NYTimesTestApp/blob/master/UT.png)
