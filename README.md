@@ -31,7 +31,7 @@ cd NYTimesTestApp
 git clone https://github.com/jjaaxx44/NYTimesTestApp.git
 ```
 
-Once done follow #3 to #6
+Once done follow #3 to #6 from above
 
 
 ## Testing and coverage
